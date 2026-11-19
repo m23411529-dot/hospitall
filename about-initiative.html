@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>عن المبادرة | نبض الأمل</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#00685f",
+            "primary-container": "#008378",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#f4fffc",
+            "primary-fixed": "#89f5e7",
+            "secondary": "#855300",
+            "secondary-container": "#fea619",
+            "on-secondary-container": "#684000",
+            "secondary-fixed": "#ffddb8",
+            "tertiary": "#b90538",
+            "surface": "#fbf9f5",
+            "surface-dim": "#dbdad6",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#f5f3ef",
+            "surface-container": "#efeeea",
+            "surface-container-high": "#eae8e4",
+            "on-surface": "#1b1c1a",
+            "on-surface-variant": "#3d4947",
+            "outline": "#6d7a77"
+          },
+          fontFamily: {
+            "body-md": ["Readex Pro"],
+            "headline-lg": ["Readex Pro"],
+            "headline-md": ["Readex Pro"],
+            "headline-sm": ["Readex Pro"]
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="bg-surface font-body-md text-on-surface antialiased">
+
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(28,25,23,0.05)]">
+    <div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-full bg-secondary-fixed flex items-center justify-center text-primary shadow-[0_2px_8px_rgba(254,166,25,0.2)]">
+          <span class="material-symbols-outlined text-[26px]">favorite</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-headline-sm text-primary tracking-tight font-bold">نبض الأمل</span>
+          <span class="text-xs text-secondary font-medium">لأطفال الغسيل الكلوي</span>
+        </div>
+      </a>
+
+      <nav class="hidden xl:flex items-center gap-2 bg-surface-container-low px-4 py-2 rounded-full">
+        <a href="index.html" data-path="home" class="px-4 py-2 rounded-full font-semibold text-on-surface-variant hover:text-on-surface transition-colors">الرئيسية</a>
+        <a href="heroes-stories.html" data-path="heroes-stories" class="px-4 py-2 rounded-full text-on-surface-variant hover:text-on-surface transition-colors">قصص وأحلام الأبطال</a>
+        <a href="donation-calculator.html" data-path="donation-calculator" class="px-4 py-2 rounded-full text-on-surface-variant hover:text-on-surface transition-colors">حاسبة التبرع والكفالة</a>
+        <a href="partners-and-hospitals.html" data-path="partners-and-hospitals" class="px-4 py-2 rounded-full text-on-surface-variant hover:text-on-surface transition-colors">شراكات ومستشفيات</a>
+        <a href="about-initiative.html" data-path="about-initiative" class="px-4 py-2 rounded-full bg-primary-container text-on-primary-container font-semibold transition-colors">عن المبادرة</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#" data-path="quick-donate" class="inline-flex items-center gap-2 bg-secondary-container hover:bg-secondary-fixed text-on-secondary-container px-5 py-2.5 rounded-full font-bold shadow-md transition-all hover:scale-105">
+          <span>تبرّع الآن</span>
+          <span class="material-symbols-outlined text-[20px]">volunteer_activism</span>
+        </a>
+        <button data-action="toggle-mobile-menu" class="xl:hidden p-2 rounded-xl text-on-surface-variant hover:bg-surface-container">
+          <span class="material-symbols-outlined text-[28px]">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="w-full pt-28 pb-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col gap-16">
+      
+      <!-- Page Hero -->
+      <div class="text-center max-w-3xl mx-auto flex flex-col gap-4">
+        <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed self-center text-xs font-bold">
+          <span class="material-symbols-outlined text-[18px]">favorite</span>
+          رسالتنا وقيمنا
+        </span>
+        <h1 class="text-3xl lg:text-4xl font-bold text-on-surface">عن مبادرة نبض الأمل</h1>
+        <p class="text-on-surface-variant text-base leading-relaxed">
+          انطلقت المبادرة بهدف واحد لا حياد عنه: ألا يقف عجز مالي أو نقص فلاتر تنقية حائلاً بين طفل مصاب بالقصور الكلوي وبين حقه الكامل في جلسات علاج آمنة ومستقبل مشرق.
+        </p>
+      </div>
+
+      <!-- Pillars Bento Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-surface-container-high flex flex-col gap-4">
+          <div class="w-14 h-14 rounded-2xl bg-primary/10 text-primary flex items-center justify-center font-bold">
+            <span class="material-symbols-outlined text-[28px]">visibility</span>
+          </div>
+          <h3 class="font-bold text-xl text-on-surface">رؤيتنا</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            أن تكون منصة نبض الأمل الجسر الرقمي الأول الأكثر موثوقية وإنسانية في العالم العربي لكفالة وتأهيل أطفال الغسيل الكلوي حتى زراعة الكلى بنجاح.
+          </p>
+        </div>
+
+        <div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-surface-container-high flex flex-col gap-4">
+          <div class="w-14 h-14 rounded-2xl bg-secondary/10 text-secondary flex items-center justify-center font-bold">
+            <span class="material-symbols-outlined text-[28px]">flag</span>
+          </div>
+          <h3 class="font-bold text-xl text-on-surface">رسالتنا</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            تحويل ساعات الانتظار المعقدة على أجهزة التنقية إلى بيئة دافئة محفزة تنبض بالحياة، وتخفيف العبء المالي والنفسي عن كاهل أسر الأطفال الصابرين.
+          </p>
+        </div>
+
+        <div class="bg-surface-container-lowest p-8 rounded-3xl shadow-sm border border-surface-container-high flex flex-col gap-4">
+          <div class="w-14 h-14 rounded-2xl bg-tertiary/10 text-tertiary flex items-center justify-center font-bold">
+            <span class="material-symbols-outlined text-[28px]">verified_user</span>
+          </div>
+          <h3 class="font-bold text-xl text-on-surface">الشفافية والحوكمة</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed">
+            تخضع كافة التبرعات لتدقيق مالي مستقل، وتصل تقارير دورية موثقة للمتبرع توضح رقم الحالة، المستشفى المعتمد، وتاريخ الجلسة المنجزة بدقة متناهية.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Medical Board & Safety Standards -->
+      <div class="bg-surface-container-low p-8 lg:p-12 rounded-3xl border border-surface-container-high flex flex-col gap-8">
+        <div class="text-center max-w-2xl mx-auto flex flex-col gap-2">
+          <h2 class="text-2xl font-bold text-on-surface">معايير السلامة والجودة الطبية</h2>
+          <p class="text-sm text-on-surface-variant">تلتزم المنصة بأعلى بروتوكولات مكافحة العدوى ونظم تنقية المياه المعتمدة عالمياً</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+          <div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm">
+            <span class="text-3xl mb-2 block">🩺</span>
+            <h4 class="font-bold text-sm text-on-surface mb-1">إشراف استشاري أطفال</h4>
+            <span class="text-xs text-outline">متابعة تحاليل الهيموجلوبين والكالسيوم دورياً</span>
+          </div>
+
+          <div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm">
+            <span class="text-3xl mb-2 block">💧</span>
+            <h4 class="font-bold text-sm text-on-surface mb-1">فلاتر أحادية الاستخدام</h4>
+            <span class="text-xs text-outline">ضمان عدم تكرار الفلاتر لحماية مناعة الطفل</span>
+          </div>
+
+          <div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm">
+            <span class="text-3xl mb-2 block">🎨</span>
+            <h4 class="font-bold text-sm text-on-surface mb-1">برنامج التمكين النفسي</h4>
+            <span class="text-xs text-outline">أخصائيون نفسيون لمرافقة الطفل أثناء الجلسة</span>
+          </div>
+
+          <div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm">
+            <span class="text-3xl mb-2 block">📋</span>
+            <h4 class="font-bold text-sm text-on-surface mb-1">تقارير مالية سحابية</h4>
+            <span class="text-xs text-outline">تكامل فوري عبر خوادم Firebase السحابية</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="max-w-3xl mx-auto w-full flex flex-col gap-6">
+        <h2 class="text-2xl font-bold text-on-surface text-center mb-2">الأسئلة الشائعة</h2>
+        
+        <div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm border border-surface-container-high">
+          <h4 class="font-bold text-base text-primary mb-1">كيف أضمن وصول تبرعي مباشرة لجلسة الطفل؟</h4>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            يتم ربط كل تبرع برقم الجلسة ورقم ملف الطفل في المستشفى المعتمد. وتصدر المنصة إشعاراً فور إتمام المعاملة في قاعدة بيانات Firebase وقيدها لحساب المستشفى.
+          </p>
+        </div>
+
+        <div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm border border-surface-container-high">
+          <h4 class="font-bold text-base text-primary mb-1">هل يمكنني كفالة طفل معين بانتظام كل شهر؟</h4>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            نعم، يمكنك اختيار كفالة دورية شهرية، وتصلك شهرياً تحديثات عن الحالة الصحية للبطل وتفوقه الدراسي وأنشطته داخل المركز.
+          </p>
+        </div>
+
+        <div class="bg-surface-container-lowest p-5 rounded-2xl shadow-sm border border-surface-container-high">
+          <h4 class="font-bold text-base text-primary mb-1">هل تقبل المنصة أموال الزكاة والصدقات؟</h4>
+          <p class="text-xs text-on-surface-variant leading-relaxed">
+            نعم، جميع الحالات المستفيدة من الأسر الأشد حاجة غير القادرة على تكاليف الغسيل المتكرر، وتخضع مصارف التبرع لفتوى شرعية معتمدة في مصارف الزكاة العلاجية.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="mt-16 w-full bg-surface-container-lowest border-t border-surface-container-high">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 py-12 text-center text-sm text-on-surface-variant">
+      جميع الحقوق محفوظة © 2026 مبادرة نبض الأمل لأطفال الغسيل الكلوي.
+    </div>
+  </footer>
+
+  <script type="module" src="js/firebase-config.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
